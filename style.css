@@ -15,7 +15,7 @@ body {
   font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
   line-height: 1.7;
   color: #333;
-  background: #f9ebdb;
+  background: linear-gradient(180deg, #f7efe8 0%, #f3e8df 100%);
 }
 
 img {
@@ -40,6 +40,7 @@ ul {
   margin: 0 auto;
   background: #fff;
   overflow: hidden;
+  box-shadow: 0 10px 40px rgba(74, 47, 47, 0.12);
 }
 
 section {
@@ -54,19 +55,19 @@ section {
 
 .section-title {
   margin: 0 0 24px;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 1.4;
   text-align: center;
   color: #4a2f2f;
+  letter-spacing: 0.02em;
 }
 
 .section-text {
   margin: 20px 0 0;
   font-size: 14px;
   text-align: center;
-}
-.section-text {
   font-weight: bold;
+  color: #5b4747;
 }
 
 /* FV */
@@ -90,13 +91,13 @@ section {
 
 .fv__title {
   margin: 0 0 16px;
-  font-size: 28px;
-  line-height: 1.8;
+  font-size: 27px;
+  line-height: 1.65;
   color: #4a2f2f;
 }
-.fv__title span{
-  border-bottom:3px solid #b43c62;
-  background-color:#fefe89;
+.fv__title span {
+  border-bottom: 3px solid #b43c62;
+  background-color: #fff2be;
   letter-spacing: 0.18em;
 }
 
@@ -111,6 +112,24 @@ section {
 
 .fv__image img {
   border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(74, 47, 47, 0.16);
+}
+
+.fv__support-points {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.fv__support-points li {
+  font-size: 11px;
+  padding: 8px 6px;
+  border-radius: 999px;
+  text-align: center;
+  color: #6f4b55;
+  border: 1px solid #ebccd6;
+  background: #fff;
 }
 
 .fv__offer {
@@ -165,6 +184,7 @@ section {
   border: 1px solid #eee3df;
   border-radius: 12px;
   position: relative;
+  color: #4a2f2f;
 }
 
 .check-list li::before,
@@ -182,8 +202,8 @@ section {
 .solution__image {
   margin-bottom: 20px;
 }
-.cause__image{
-  height:300px;
+.cause__image {
+  height: 300px;
   background: linear-gradient(
     to bottom,
     #ffffff 0%,
@@ -195,17 +215,18 @@ section {
 .cause__image img,
 .solution__image img {
   border-radius: 16px;
-  height:auto;
-  width: 520px;
+  height: auto;
+  width: 100%;
 }
 
-.section-cause-title{
+.section-cause-title {
   background: #fff;
   border-radius: 28px;
   padding: 20px 20px 20px;
   box-shadow: 0 10px 30px rgba(74, 47, 47, 0.08);
-  border:1.5px solid #8e8279;
+  border: 1.5px solid #8e8279;
   text-align: center;
+  margin: 0;
 }
 
 /* カード */
@@ -224,6 +245,7 @@ section {
   background: #fff;
   border: 1px solid #eee3df;
   border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(74, 47, 47, 0.04);
 }
 
 .feature-card__title,
@@ -403,8 +425,9 @@ section {
 
 .problems__title {
   margin-bottom: 28px;
-  border-bottom:2px solid #4a2f2f;
+  border-bottom: 2px solid #4a2f2f;
   color: #4a2f2f;
+  padding-bottom: 8px;
 }
 
 .problems__list {
@@ -465,7 +488,7 @@ section {
   border-radius: 28px;
   padding: 34px 20px 28px;
   box-shadow: 0 10px 30px rgba(74, 47, 47, 0.08);
-  border:1.5px solid #8e8279;
+  border: 1.5px solid #8e8279;
 }
 
 .problems__bubble::before {
@@ -514,7 +537,7 @@ section {
   }
 
   .problems__woman {
-    width: 145px;
+    width: 140px;
     right: 0;
   }
 
@@ -532,5 +555,10 @@ section {
 
   .problems__bubble::before {
     right: 76px;
+  }
+
+  .fv__support-points {
+    grid-template-columns: 1fr;
+    gap: 6px;
   }
 }
